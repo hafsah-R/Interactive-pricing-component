@@ -1,0 +1,32 @@
+div {
+  margin-top: 22px;
+  display: block;
+  /*background:#B0E0E6;*/
+}
+div #slider {
+  margin-left: -45px;
+  -webkit-appearance: none;
+  width: 140%;
+  height: 7px;
+  background: #F0F0F0;
+  border-radius: 20px;
+}
+div #slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: #FFB6C1;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  background-image: url(icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div #slider::-moz-range-progress {
+  border-radius: 20px;
+  width: 140%;
+  height: 7px;
+  background-color: #B0E0E6;
+}
+
+/*# sourceMappingURL=Rstyle.css.map */

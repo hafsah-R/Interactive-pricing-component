@@ -1,0 +1,150 @@
+
+
+$font-size:1.5vw;
+$Slider-border-radius:20px;
+$display:inline;
+
+body{
+	background-color:#FFFAFA;
+	margin:0;
+	padding:0;
+	font-family:'Crimson Pro', serif;
+    color:#505050;
+	font-size:$font-size;
+}
+body img{
+	position:relative;
+	width:100%;
+}
+
+.container{
+	position:absolute;
+	background-color:white;
+	width:23%;
+	height:105px;
+	box-shadow:0 4px 10px -2px #F0F0F0;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding:100px;
+	border-radius:10px;
+}
+
+.head{
+    margin:-80px;
+
+span{
+   display:inline-block;
+   margin:13px;
+}
+}
+
+.switchContain{
+   margin:30px 0;
+   margin-left:-20px;
+   white-space: nowrap;
+
+span{
+   display:$display;
+}
+p{
+   display:$display;
+}
+#warn{
+   background-color:#ffe6e6;
+   color:#ff4d4d;
+   border-radius:8px;
+
+}
+.switch{
+	    display:inline-block;
+		position:relative;
+		width:40px;
+		height:20px;
+	}
+	.switch input{
+		width:0;
+		height:0;
+		opacity:0;
+	}
+	.Sslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#F0F0F0;
+  border-radius:10px;
+  
+}
+	.Sslider:before{
+		position:absolute;
+		content:"";
+		height:12px;
+		width:15px;
+		left:4px;
+		bottom:4px;
+		background-color:white;
+		border-radius:5px;
+		
+	}
+	input:checked +.Sslider {
+        background-color: #B0E0E6;
+}
+input:checked+.Sslider:before{
+	-webkit-transform:translateX(15px);
+	-ms-transform:translateX(15px);
+	transform:translateX(15px);
+}
+}
+
+
+hr{
+    margin-left:-100px;
+	border:0.5px solid #F0F0F0;
+	width:185%;
+}
+
+
+.left{
+	margin-left:-70px;
+
+img{
+	float:left;
+	width:5%;
+}
+ p{
+	margin-left:30px;
+}
+}
+	
+.right{
+	float:right;
+	margin:-70px;
+
+	button{
+		background-color:#008B8B;
+		color:white;
+		border-radius:30px;
+		padding:10px 25px;
+		border:none;
+	}
+}
+
+
+@media screen and (max-width:375px) {
+  .head,.left,.right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .head{
+	#left{ 
+	margin-left:-60px;
+	} 
+  }
+  .slider{
+	margin-top:5px;
+}
+}
