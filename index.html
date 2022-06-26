@@ -7,50 +7,41 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
 
 </head>
+
 <body>
 
-
-<img src="bg-pattern.svg" >
+<img src="bg-pattern.svg" class="backgroundImage">
 
 <div class="container">
 
-<div class="head">
-<span><p>100k previewes</p></span><span id="left" style="float:right;margin-top:5px;"><p>/month</p></span>
+<div class="header">
+ <span><p>100k previewes</p></span><span id="left" style="float:right;margin-top:5px;"><p>/month</p></span>
 </div>
 
-
-<!--<input type="range" min="0" max="100" class="slider" onClick={this.writeData} ref = "cpDev1">-->
-
-<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
- <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-  <script src="index.js"></script>
 <div id="app"></div>
 
-
-
-
 <div class="switchContain">
-<span><p>monthly billing</p></span>&nbsp;&nbsp;
-<span>
-<label class="switch">
-<input type="checkbox">
-<span class="Sslider"></span>
-</label>
-</span>&nbsp;&nbsp;
-<span><p>yearly billing&nbsp;</p><span id="warn"><p>25%discount</p></span></span>
+ <span><p>monthly billing</p></span>&nbsp;&nbsp;
+ <span>
+ <label class="switch">
+ <input type="checkbox">
+ <span class="switchSlider"></span>
+ </label>
+ </span>&nbsp;&nbsp;
+ 
+ <span><p>yearly billing&nbsp;</p><span id="warn"><p>25%discount</p></span></span>
 </div>
-
 
 <hr>
 
 <div class="left">
-<img src="icon-check.svg"><p>Unlimted website</p>
-<img src="icon-check.svg"><p>100% data ownership</p>
-<img src="icon-check.svg"><p>Email reports</p>
+ <img src="icon-check.svg"><p>Unlimted website</p>
+ <img src="icon-check.svg"><p>100% data ownership</p>
+ <img src="icon-check.svg"><p>Email reports</p>
 </div>
 
 <div class="right">
-<button>start my trial</button>
+ <button class="rightButton">start my trial</button>
 </div>
  
 
