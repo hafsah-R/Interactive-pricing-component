@@ -1,20 +1,21 @@
 
-
 $font-size:1.5vw;
 $Slider-border-radius:20px;
 $display:inline;
+$font-family:'Crimson Pro', serif;
 
 body{
 	background-color:#FFFAFA;
 	margin:0;
 	padding:0;
-	font-family:'Crimson Pro', serif;
+	font-family:font-family;
     color:#505050;
 	font-size:$font-size;
+	.backgroundImage{
+	 position:relative;
+	 width:100%;
+	 height:60%;
 }
-body img{
-	position:relative;
-	width:100%;
 }
 
 .container{
@@ -32,12 +33,12 @@ body img{
 	border-radius:10px;
 }
 
-.head{
+.header{
     margin:-80px;
 
-span{
-   display:inline-block;
-   margin:13px;
+    span{
+     display:inline-block;
+     margin:13px;
 }
 }
 
@@ -46,100 +47,112 @@ span{
    margin-left:-20px;
    white-space: nowrap;
 
-span{
-   display:$display;
-}
-p{
-   display:$display;
-}
-#warn{
+   span{
+    display:$display;
+  }
+   p{
+    display:$display;
+  }
+  #warn{
    background-color:#ffe6e6;
    color:#ff4d4d;
    border-radius:8px;
-
-}
-.switch{
-	    display:inline-block;
-		position:relative;
-		width:40px;
-		height:20px;
+ }
+ .switch{
+  display:inline-block;
+  position:relative;
+  width:40px;
+  height:20px;
 	}
-	.switch input{
-		width:0;
-		height:0;
-		opacity:0;
+  .switch input{
+    width:0;
+	height:0;
+	opacity:0;
 	}
-	.Sslider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color:#F0F0F0;
-  border-radius:10px;
-  
+  .switchSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#F0F0F0;
+    border-radius:10px;
 }
-	.Sslider:before{
-		position:absolute;
-		content:"";
-		height:12px;
-		width:15px;
-		left:4px;
-		bottom:4px;
-		background-color:white;
-		border-radius:5px;
-		
+  .switchSlider:before{
+    position:absolute;
+	content:"";
+	height:12px;
+	width:15px;
+	left:4px;
+	bottom:4px;
+	background-color:white;
+	border-radius:5px;
 	}
-	input:checked +.Sslider {
-        background-color: #B0E0E6;
+	
+  input:checked +.switchSlider {
+    background-color: #B0E0E6;
 }
-input:checked+.Sslider:before{
+  input:checked+.switchSlider:before{
 	-webkit-transform:translateX(15px);
 	-ms-transform:translateX(15px);
 	transform:translateX(15px);
 }
-}
 
+}
 
 hr{
-    margin-left:-100px;
-	border:0.5px solid #F0F0F0;
-	width:185%;
+ margin-left:-100px;
+ border:0.5px solid;
+ width:185%;
+ color: #F0F0F0;
 }
-
 
 .left{
-	margin-left:-70px;
+ margin-left:-70px;
 
-img{
-	float:left;
-	width:5%;
+ img{
+  float:left;
+  width:5%;
 }
- p{
-	margin-left:30px;
+  p{
+   margin-left:30px;
 }
 }
 	
 .right{
-	float:right;
-	margin:-70px;
+ float:right;
+ margin:-70px;
 
-	button{
-		background-color:#008B8B;
-		color:white;
-		border-radius:30px;
-		padding:10px 25px;
-		border:none;
+ button{
+  background-color:#008B8B;
+  color:white;
+  border-radius:30px;
+  padding:10px 25px;
+  border:none;
 	}
 }
 
+.dark-mode{
+  background-color:#020e5d;
+  color:#020e5d;
+  .container{
+    background-color:#d1e6ed;
+	}
+  .rightButton,.switchSlider:before{
+	background-color:#020e5d;
+    color:white;
+  }
+  .switchSlider,#slider{
+    background-color:white;
+  }
+}
 
 @media screen and (max-width:375px) {
-  .head,.left,.right {
+  .header,.left,.right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
-  .head{
+  .header{
 	#left{ 
 	margin-left:-60px;
 	} 
