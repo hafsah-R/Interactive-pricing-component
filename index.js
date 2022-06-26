@@ -9,21 +9,23 @@ class App extends React.Component {
     super()
     this.state = {
 		value: 16,
-		color:'#F0F0F0'
+		color:'#F0F0F0',
 	}
     this.handleChange = this.handleChange.bind(this)
   }
   
   handleChange(event) {
-	/* this.state.color:'#B0E0E6'*/
- 
-
+	
     this.setState({
 		value: event.target.value
 		
 	});
         
-    
+  }
+  darkMode=()=>{
+	  var classes=document.querySelectorAll("body,.container,hr")
+	for(const className of classes){
+	className.classList.toggle("dark-mode")}
   }
 
   render() {
@@ -33,7 +35,6 @@ class App extends React.Component {
       <div>
         <label>
           <input 
-	
             id="slider" 
             type="range" 
             min="0" max="99" 
@@ -41,7 +42,10 @@ class App extends React.Component {
             onChange={this.handleChange}
             step="0"/>
         </label>
+         <button class="darkModeButton" onClick={this.darkMode}>Dark mode</button>
       </div>
+	  
+	  
 	  
     ]);
   }
@@ -49,12 +53,3 @@ class App extends React.Component {
 
 ReactDOM.render(
   <App/>, document.getElementById('app'));
-
-
-/*
-You are now watching a React file
-through our 'Show React' tool.
-Click the tab to check out
-the 'index.html' file as well.
-*/
-
